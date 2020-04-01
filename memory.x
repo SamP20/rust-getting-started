@@ -1,0 +1,9 @@
+/* Linker script for the STM32F439ZITx */
+MEMORY
+{
+    FLASH : ORIGIN = 0x08000000, LENGTH = 1024K
+    RAM : ORIGIN = 0x20000000, LENGTH = 192K
+    /* CCRAM : ORIGIN = 0x010000000, LENGTH = 64K */
+}
+
+/* _stack_start = ORIGIN(CCRAM) + LENGTH(CCRAM); */
